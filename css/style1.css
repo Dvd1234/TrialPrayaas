@@ -1,0 +1,270 @@
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  line-height: 30px;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#about_container
+{
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    margin: 0px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+.about_wrapper_1,.about_wrapper_2
+{
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0px;
+}
+
+.about_heading_section
+{  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_heading_section h1, h3
+{ color: black;
+   width: 100%;
+   margin: 0px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.about_wrapper_2
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.about_achieve_conatiner,.about_news_conatainer
+{
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_achieve_body_self
+{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/*.achieve_image_anim
+{
+    width:90px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding-left: 0px;
+    display: flex;
+    padding-left:-80px;
+    border: solid 3px white;
+}
+
+.achieve_image_anim img
+{
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.achieve_image_anim:hover
+{
+    padding-left:0px;
+    transition-duration: .4s;
+}
+*/
+.about_achieve_body_self h2
+{   color: black;
+    margin-top: 50px;
+    width:max-content;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+}
+
+.about_news_conatainer
+{
+    width: 400px;
+    height: 500px fixid;
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.about_news_conatainer h1
+{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 2px white;
+    margin:5px 0px;
+    padding: 10px 0px;
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.about_news_conatainer ul
+{
+    
+    width: 100%;
+    margin: 0px;
+    padding:10px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.about_news_conatainer ul li
+{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin:4px 0px;
+}
+
+
+/*    */
+
+
+
+@media screen and (max-width:860px)
+{
+  
+.about_wrapper_2
+{
+    display: flex;
+    flex-direction: column;
+
+}
+  
+
+
+.about_news_conatainer
+{
+    margin-top: 40px;
+}
+.a10
+{
+  margin-left: 0px;
+}
+
+}
+#new
+{
+font-weight: bold;
+
+}
+
+  .sidenav {
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    right:0;
+    background-color: rgb(20, 20, 20);
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    text-align:center;
+
+  }
+  
+  
+  
+  .sidenav a:hover{
+    color: #ffffff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 30px;}
+    .sidenav a {font-size: 24px;}
+    
+  }
