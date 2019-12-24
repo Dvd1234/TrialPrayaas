@@ -243,7 +243,7 @@ font-weight: bold;
     right:0;
     background-color: rgb(20, 20, 20);
     overflow-x: hidden;
-    transition: 1s;
+    transition: .4s;
     padding-top: 60px;
     text-align:center;
 
