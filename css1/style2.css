@@ -1,53 +1,64 @@
-body {
-    font-family: "Lato", sans-serif;
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+
+
+
+.topnav a:hover {
+ 
+  color: white;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .topnav a {
+    display: none;
   }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(38, 32, 51);
-    overflow-x: hidden;
-    transition: 1s;
-    padding-top: 60px;
-    text-align:center;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ff0000;
+  .topnav a.icon {
+    float: right;
     display: block;
-    transition: 0.2s;
-  
   }
-  
-  .sidenav a:hover{
-    color: #ffffff;
-  }
-  
-  .sidenav .closebtn {
+}
+
+@media screen and (max-width: 500px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
     position: absolute;
+    right: 0;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 30px;}
-    .sidenav a {font-size: 24px;}
-    
+  .topnav.responsive a {
+    float:left;
+    display: block;
+    text-align: left;
   }
-  #bg{
-    position: relative;
-    text-align: center;
-     
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
   }
-  .sri:hover{
-  background-color: green;
-  }
+}
