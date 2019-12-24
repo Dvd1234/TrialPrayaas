@@ -51,35 +51,28 @@
 </head>
 <body>
 
-  <div class="navbar navbar-fixed-top" style="background-color: rgb(21, 24, 54);height: max-content;width: 100%;">
- <div class="w3-row container-fluid" style="margin-left: 0px; padding-left: 0px;">
-  <div class="w3-col s4 w3-animate-left" ><a href="index.html"><img src="New folder/rsz_prayaas_logo2.png" alt="" style="float: left;height: 48px;width: 125px; margin: 0px; padding:0px; "></a></div>
-  <div class="w3-col s4 w3-center  w3-animate-zoom" style="color: white;"><h1 style="margin-top: 14px;"><a href="srijan.html" style="text-decoration: none; font-family: Lilita One;font-size:25px;">S R I J A N </a></h1></div>
+    
+  <div class="navbar navbar-fixed-top container-fluid" style="background-color: rgb(21, 24, 54);height: auto;width: 100%;">
+ <div class="row " style="margin-left: 0px; padding-left: 0px;">
+  <div class="col-sm-4 w3-animate-left " ><a href="index.html"><img src="New folder/rsz_prayaas_logo2.png" alt="" style="float: left;height: 48px;width: 125px; margin: 0px; padding:0px; "></a></div>
+  <div class="col-sm-4 w3-center  w3-animate-zoom" style="color: white;"><h1 style="margin-top: 14px;"><a href="srijan.html" style="text-decoration: none; font-family: Lilita One;font-size:25px;">SRIJAN </a></h1></div>
+    <div class="topnav col-sm-4 " style="float:right; " id="myTopnav">
+  <a style=" padding-left: 3px;padding-right: 10px;" href="prayaas_day.html">PRAYAAS DAY</a>
+  <a style="padding-left: 3px;padding-right: 7px;" href="donate.html">DONATE</a>
+ 
+  <a style="padding-left: 5px;padding-right: 30px;" href="#gallery19">GALLERY</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-    <div class="navbar-collapse collapse" style="padding-top: 5px;">
-      <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;" style="float: right;" >
-
-        <li><a href="#Gallery_section" style="font-size: 20px;">GALLERY</a></li>
-        <li><a href="donate.html" style="font-size: 20px;">DONATE</a></li>
-        <li><a href="prayaas_day.html" style="font-size: 20px;">PRAYAAS DAY</a></li>
-      </ul>
+  </div>
     </div>
 	
 
   </div>
-  </div>
   
-  
-  
-<script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "300px";
-    }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
+  
+
     <div id="bg" style="margin-top:50px">
       <div >
         <img src="img/Srijan Poster-01.jpeg" alt="img" style="height: 93vh;width: 100%;">
@@ -392,7 +385,16 @@
           </section>
 
 
-
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
 
         <script src="js1/jquery.min.js"></script>
         <script src="js1/bootstrap.min.js"></script>
