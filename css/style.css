@@ -340,7 +340,7 @@ section.section {
 	height: 100px;
 	background-color: rgba(0,0,0,0.3);
 	padding:0;
-        margin:0;
+    margin:0;
 	vertical-align: middle;
 	text-align:center;
 	margin-bottom: 0;
@@ -349,7 +349,9 @@ section.section {
 
 .navbar .navbar-collapse {
 	margin-bottom: 0;
+	margin-right: 65px;
 	padding-bottom:0;
+	margin-top: -5px;
 }
 
 .nav li {
@@ -464,11 +466,10 @@ text-shadow: 1px 1px 8px black;
 }
 	.intro-content  h2 {
                 margin-top:100px;
-		font-size: 80px;
+		font-size: 70px;
                 margin-bottom: -10px;
 text-shadow: 1px 1px 3px crimson;
 	}
-	
 }
 
 U.btn-get-started {
@@ -1090,10 +1091,9 @@ Media queries
 	}
 	.navbar .navbar-collapse ul.nav {
 		background-color: #444;
-		width: 100%;
-		float: none;
-		margin:0;
-		padding:0;
+		max-width:100%;
+		float: right;
+		
 	}
 	.navbar .navbar-collapse ul.nav li {
 		border-bottom: 1px solid #666;
