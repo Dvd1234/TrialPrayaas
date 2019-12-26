@@ -733,7 +733,7 @@
 	window.setTimeout(myfunction, 95000);
 	
 	function myfunction(){
-		var x = document.getElementsByClassName("current").id;
+		var x = document.getElementsByClassName("current")[0].id;
 		<!--returns 0 if both strings equal-->
 		if(!(x.localeCompare("testDiv"))){
 			var element = document.getElementById("testDiv");
