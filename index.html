@@ -463,7 +463,7 @@
       <div  class="row">
         <nav id="filter" class="col-md-12 text-center">
           <ul>
-            <li><a id="testDiv" style="padding: 5px; margin: 0px;" href="#" class="                       btn btn-small " data-filter="*">All</a></li>
+            <li><a id="testDiv" style="padding: 5px; margin: 0px;" href="#" class="current btn btn-small " data-filter="*">All</a></li>
             <li><a id="testTwo" style="padding: 5px; margin: 0px;" href="#" class="btn btn-small" data-filter=".webdesign">EVENTS</a></li>
             <li><a id="testThree" style="padding: 5px; margin: 0px;" href="#" class="btn btn-small" data-filter=".photography">FESTIVE</a></li>
             <li><a id="testFour" style="padding: 5px; margin: 0px;" href="#" class="btn btn-small" data-filter=".print">DAYS</a></li>
@@ -733,7 +733,7 @@
 	window.setTimeout(myfunction, 95000);
 	
 	function myfunction(){
-		var x = document.getElementsByClassName('current')[0].id;
+		var x = document.getElementsByClassName("current").id;
 		<!--returns 0 if both strings equal-->
 		if(!(x.localeCompare("testDiv"))){
 			var element = document.getElementById("testDiv");
