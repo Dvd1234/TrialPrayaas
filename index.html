@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css?family=Gayathri:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Josefin+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
   <!-- skin -->
@@ -57,7 +59,44 @@
 		
 	  }
 
-		
+		#mask {
+  position:sticky;
+  left:0;
+  top:0;
+  z-index:99999;
+  background-color:transparent;
+  display:none;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:850px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#boxes #dialog {
+  width:auto; 
+  height:auto;
+  padding: 10px 10px 10px 10px;
+  background-color:#ffffff;
+  font-size: 15pt;
+}
+
+.agree:hover{
+  background-color: #D1D1D1;
+}
+.popupoption:hover{
+ background-color:#D1D1D1;
+ color: green;
+}
+.popupoption2:hover{
+ color: red;
+}
 
   </style>
 
@@ -73,10 +112,7 @@
   <section id="header" class="appear"></section>
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
-
-
-	
-
+  
     <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(5, 42, 62, 1);">
       <div class="container-fluid" style="overflow: visible;max-width: 100%;">
         <div class="navbar-header">
@@ -652,25 +688,19 @@
                     <input class="w3-input w3-border" name="name" type="text"  placeholder="Your Name" required>
                     </div>
                  </div>
-
-
                 <div class="w3-row w3-section">
                   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
                     <div class="w3-rest">
                       <input class="w3-input w3-border" name="email" type="email" placeholder="Email" required>
                     </div>
                 </div>
-
-
                 <div class="w3-row w3-section">
                   <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
                     <div class="w3-rest">
                       <input class="w3-input w3-border" name="message" type="text" placeholder="Message" required>
                     </div>
                 </div>
-
                 <button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding" type="submit" value="Send">Send</button>
-
             </div>
           </form>
 		  -->
@@ -714,17 +744,57 @@
       </div>
     </div>
   </section>
-  <a role="button" onclick="openNav()" class="ask" style="border: 2px solid brown;border-right: none;"  >HOW TO <br> JOIN</a>
+  <a role="button" onclick="openNav()" class="ask" style="border: 2px solid rgb(0, 0, 0);border-right: none;"><img src="img/join.jpg" style="width: 90px; height: 90px;"></a>
   <div id="mySidenav" class="sidenav" style="word-spacing: 10px; z-index: 9999;">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: crimson;">&times;</a>
-    <div style="padding: 30px;color: #fff;background-color: rgb(20, 20, 20);" >
-     <h1  style="text-decoration: underline;font-weight: bold;color: #fff;line-height: normal; " > How To Join Prayaas Family? </h1>
-<p > ‘PRAYAAS’ is a campaign for smile. Hence, you don’t need any formalities to be a part of this noble cause. All you need to do is take courage to come to any of our centers and start teaching a child. You don’t need to have great experience to join PRAYAAS. All you need is a noble heart to hold the tiny hands of any of these kids and make them dream of a beautiful, better- FUTURE.<span style="font-size: 25px;">&#9786;</span>  <br>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: crimson; margin-top: 20px;">&times;</a>
+    <div style="padding-left: 30px;padding-right: 30px; color: #fff;background-color: rgb(20, 20, 20);" >
+     <h1  style="font-weight: bold;color: #fff;line-height: normal; font-family: 'Gayathri', sans-serif;"> How To Join Prayaas Family? </h1>
+<p style="font-family: 'Roboto Condensed', sans-serif;" > ‘PRAYAAS’ is a campaign for smile. Hence, you don’t need any formalities to be a part of this noble cause. All you need to do is take courage to come to any of our centers and start teaching a child. You don’t need to have great experience to join PRAYAAS. All you need is a noble heart to hold the tiny hands of any of these kids and make them dream of a beautiful, better- FUTURE.<span style="font-size: 25px;">&#9786;</span>  <br>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLVyImT5m-WAX0Way0WalE-sFzWM6OHjbJ3u4M2fZm17EkkQ/viewform?vc=0&c=0&w=1" class="w3-btn w3-blue w3-hover-green" target="_blank" style="font-size: 15px; padding: 10px; border-radius: 10px;">Contact Form</a><br><br> <b>Feel free to call @ 7528001845(Rishi) or 8127816331(Astitva)</br></p>
     </div>
 
   </div>
- 
+
+<!-----popupstart-->
+<div id="boxes">
+  <div style="top: 50%;  display: none; position:fixed; width: 80%; margin-top: 4.5%;" id="dialog" class="window"> 
+  <div id="san" >
+  <img src="img/temp1.jpeg" width="max-width:100%" style="width: 100%;">
+  </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+  <script>
+  $(document).ready(function() { 
+    var id = '#dialog';
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $('#mask').css({'width':maskWidth,'height':maskHeight}); 
+    $('#mask').fadeIn(500); 
+    $('#mask').fadeTo("slow",0.9); 
+          var winH = $(window).height();
+    var winW = $(window).width();
+          $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+       $(id).fadeIn(2000);  
+       $('.window .close').click(function (e) {
+    e.preventDefault();
+    $('#mask').hide();
+    $('.window').hide();
+       });  
+       $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+   });  
+   
+  });
+  $(document).mouseup(function (e) { 
+            if ($(e.target).closest(".window").length 
+                        === 0) { 
+                $(".window").hide(); 
+            } 
+        }); </script>
+<!----popupend-->	
+<a href="#header" class="scrollup" style="scroll-behavior: smooth;"><i class="fa fa-chevron-up"></i></a>
 <script>
 		
 	window.setTimeout(myfunction, 6000);
@@ -744,7 +814,7 @@
 	
 	function myfunction(){
 		var x = document.getElementsByClassName("current")[0].id;
-		<!--returns 0 if both strings equal-->
+	
 		if(!(x.localeCompare("testDiv"))){
 			var element = document.getElementById("testDiv");
 			element.click();
@@ -761,10 +831,9 @@
     document.getElementById("mySidenav").style.width = "0";
   }
   
-  
-  
+ 
   </script>
-  <a href="#header" class="scrollup" style="scroll-behavior: smooth;"><i class="fa fa-chevron-up"></i></a>
+  
   <!--script-->
 
   

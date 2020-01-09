@@ -915,13 +915,13 @@ a.ask
 	line-height:32px;
 	text-align:center;
 	text-decoration:none;
-        padding:10px;
+     
 	position:fixed;
 	bottom:50px;
 	right:0px;
 	z-index:99;
         color:white;  
-        background-color:Black;
+        
         
         
 }
