@@ -56,6 +56,15 @@
 		}
 		
 	  }
+	  #popup {
+		    display:none;
+		    position:absolute;
+		    margin:0 auto;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    box-shadow: 0px 0px 50px 2px #000;
+		}
 
 		
 
@@ -100,6 +109,14 @@
         </div>
         <!--/.navbar-collapse -->
       </div>
+    </div>
+	
+	
+	<div id="popup" class="popup panel panel-primary">
+        <img src="temp.jpg" alt="popup">
+        <div class="panel-footer">
+            <button id="close" class="btn btn-lg btn-primary">Close button</button>
+        </div>
     </div>
 
 
@@ -760,6 +777,13 @@
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+	$(document).ready(function () {
+    $("#popup").hide().fadeIn(1000);
+    $("#close").on("click", function (e) {
+        e.preventDefault();
+        $("#popup").fadeOut(1000);
+    });
+});
   
   
   
